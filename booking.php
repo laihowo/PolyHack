@@ -8,7 +8,7 @@
     <img src="Icon.jpg"/ height=150>
     <h3>Submit Booking</h3>
     <p>Session ID: <?php echo $_GET['sesscode']; ?> </p>
-    <form action="process.php" method="post">
+    <form action="process.php?sesscode=<?php echo $_GET['sesscode']; ?>" method="post">
         <?php 
 $link = mysqli_connect("localhost", "root", "", "lcsdbooking");
 if($link){
@@ -43,11 +43,12 @@ if(empty($datas)){
             mysqli_free_result($result);}
         echo "<p>Booked by other users. (Waitlist length: "; echo $datas2['count']; echo ")  </p>";}
 
-    echo "<br/><input type=\"text\" name=\"areacode\" style=\"display:inline\" placeholder=\"Area Code\"/>" ;
-    echo "<input type=\"text\" name=\"phone\ style=\"display:inline\" placeholder=\"Phone Number\"/>";
+    echo "<br/><input type=\"text\" name=\"areacode\" value=\"852\" style=\"display:inline\" placeholder=\"Area Code\"/>" ;
+    echo "<input type=\"text\" name=\"phone\" style=\"display:inline\" placeholder=\"Phone Number\"/>";
     echo "<br/> <p style=\"display:inline\">Password&#160&#160</p>  <input type=\"password\" name=\"pwd\"/>";
-    echo "<br/> <p style=\"display:inline\">Session ID </p>";
-    echo "<input type=\"text\" name=\"sesscode\" disabled value=\""; echo $_GET["sesscode"] ; echo "\"/><br/><br/>";
+    //echo "<br/> <p style=\"display:inline\">Session ID </p>";
+    //echo "<input type=\"text\" name=\"sesscode\"  value=\""; echo $_GET["sesscode"] ; echo "\"/>";
+    echo "<br/><br/>";
     if($datas[0]['UserID']==0){ echo "<button type=\"submit\">Book</button>";
     }else{echo "<button type=\"submit\">Join Waitlist</button>";}
     echo "<span>&#160&#160&#160&#160</span> <a href=\"index.php\">Back</a>";
