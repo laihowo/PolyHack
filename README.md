@@ -1,11 +1,11 @@
 # PolyHack
-LCSD Helpers @ Smart City is a sports facility management system for dealing with booking issues.
+LCSD Helpers @ Smart City is a sports facility management system for dealing with the booking issues.
 
 ![Icon](https://raw.githubusercontent.com/laihowo/PolyHack/main/Icon.jpg 'Icon')
 
 ## Installation
 
-### 1. Install [XAMPP](https://www.apachefriends.org/download.html) on your computer.
+### 1. Install [XAMPP](https://www.apachefriends.org/download.html 'Press Alt + Click to Open Link in New Tab') on your computer.
 
 ### 2. Click Manage Servers and start the Apache Web Server and MySQL Database.
 
@@ -31,18 +31,9 @@ git clone https://github.com/laihowo/PolyHack.git
 
 ## Usage
 
-```python
-import foobar
+### [Business Plan](https://docs.google.com/document/d/1A6KbeMtStrT9LGhGhHMh9_hJz0CaxTpMtegP_VjA8BM/edit 'Press Alt + Click to Open Link in New Tab')
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+### [Presentation](https://docs.google.com/presentation/d/19bIPmH7f46h2CUzObfVWUw8DK1aTRP2IxptI_KlERZ8/edit 'Press Alt + Click to Open Link in New Tab')
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
