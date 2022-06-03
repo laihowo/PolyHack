@@ -5,7 +5,7 @@
     <title>Submit Booking</title>
   </head>
   <body>
-    <img src="Icon.jpg"/ height=150>
+    <img src="Icon.jpg" height=150/>
     <h3>Submit Booking</h3>
     <p>Session ID: <?php echo $_GET['sesscode']; ?> </p>
     <form action="process.php?sesscode=<?php echo $_GET['sesscode']; ?>" method="post">

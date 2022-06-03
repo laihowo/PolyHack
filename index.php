@@ -5,8 +5,9 @@
     <title>Session Status</title>
   </head>
   <body>
-    <img src="Icon.jpg"/ height=100>
-    <h3>Session Status</h3>
+    <img src="Icon.jpg" height=150/> <br/>
+    <h3 style="display:inline">Session Status &#160 &#160 &#160</h3>
+    <a href="requestrecord.php">View / Manage My Booking</a>
     <form>
         <?php 
 $link = mysqli_connect("localhost", "root", "", "lcsdbooking");
