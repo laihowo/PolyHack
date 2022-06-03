@@ -7,6 +7,8 @@ LCSD Helpers @ Smart City is a sports facility management system for dealing wit
 
 Install [XAMPP](https://www.apachefriends.org/download.html) on your computer.
 
+<a href="http://example.com/" target="_blank">Hello, world!</a>
+
 Click Manage Servers and start the Apache Web Server and MySQL Database.
 
 ![Manage Servers](https://raw.githubusercontent.com/laihowo/PolyHack/main/img/1.png)
