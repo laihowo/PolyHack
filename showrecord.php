@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Submit Booking</title>
+    <title>Booking Records</title>
   </head>
   <body>
     <?php 
@@ -79,7 +79,8 @@ if(empty($datas)){
             echo "<p>Attended. </p>";
         }else{
             echo "<span>Not Attended &#160 &#160 </span>";
-            echo "<a href=\"cancel.php?sesscode=";echo $row['SessCode']; echo "&userid="; echo $userid ; echo"\">Cancel This Booking</a><br/>";
+            echo "<a href=\"cancel.php?sesscode=";echo $row['SessCode']; echo "&userid="; echo $userid ;
+            echo "&areacode="; echo $_POST["areacode"] ;echo "&phone="; echo $_POST["phone"] ; echo"\">Cancel This Booking</a><br/>";
         }
         echo "</li>";
     }echo "</ul>";}
@@ -102,7 +103,7 @@ if(empty($datas)){
 }else{
     echo "<ul>";
     foreach($datas as $row){
-        echo "<li><p>Waitlist No: "; echo $row["WLID"];echo ", Session No: "; echo $row["SessCode"] ; echo ",<br/>From: "; echo $row['FromTime']; echo ", To: ";
+        echo "<li><p>Waitlist No: "; echo $row["WLID"];echo ", <br/>Session No: "; echo $row["SessCode"] ; echo ",<br/>From: "; echo $row['FromTime']; echo ", To: ";
         echo $row['ToTime'] ;  echo ",</br>   Venue:  "; echo $row['Address'] ; echo "</p>";
         if($link){
             $result = mysqli_query($link, "Select count(*) as count from waitlist where waitlist.session=".strval($row["SessCode"])." and waitlist.WLID <= ".strval($row["WLID"]));
@@ -116,7 +117,8 @@ if(empty($datas)){
         }
         if(!empty($datas)){
             echo "<p style=\"display:inline\">Waitlist Position: "; echo $datas2[0]["count"] ; echo " &#160 &#160 </p>";}
-        echo "<a href=\"cancel.php?sesscode=";echo $row['SessCode']; echo "&userid="; echo $userid ; echo"\">Cancel waitlisting</a><br/>";
+        echo "<a href=\"cancel.php?sesscode=";echo $row['SessCode']; echo "&userid="; echo $userid ;
+        echo "&areacode="; echo $_POST["areacode"] ;echo "&phone="; echo $_POST["phone"] ; echo"\">Cancel waitlisting</a><br/>";
         echo "</li>";
     }echo "</ul>";}
 echo "</p>";
