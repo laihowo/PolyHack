@@ -11,6 +11,8 @@ LCSD Helpers @ Smart City is a sports facility management system for dealing wit
 
 ### [Live Demo](http://polyhack.eastasia.cloudapp.azure.com/booking/ 'Press Alt + Click to Open Link in New Tab')
 
+### [Video Playlist](https://www.youtube.com/playlist?list=PL8TKOEL-O2hCmwXb9OcgoElIohG9-IVZX 'Press Alt + Click to Open Link in New Tab')
+
 ## Installation
 
 ### 1. Install [XAMPP](https://www.apachefriends.org/download.html 'Press Alt + Click to Open Link in New Tab') on your computer.
